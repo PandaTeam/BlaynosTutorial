@@ -17,7 +17,7 @@ public class TutorialCrafting
 		//where n = number. (e.g. (new ItemStack(tutorialBlock, 5) makes 5 blocks from the recipe
 		//if you want to make a SHAPELESS recipe, you need to call it a shapeless recipe. GameRegistry.addShapelessRecipe
 		GameRegistry.addShapelessRecipe(new ItemStack(TutorialProjectWuppy.tutorialBlock), new Object[]{
-			//diamond, stone, and white dye. dye number 15 is the 16th dye, (java counts 0 as the first number). 16th dye is bonemeal
+			//diamond, stone, and white dye aka Bone Meal. dye number 15 is the 16th dye, (java counts 0 as the first number). 16th dye is bonemeal
 			new ItemStack(Item.diamond), new ItemStack(Block.stone), new ItemStack(Item.dyePowder, 1, 15)
 		});
 		
@@ -33,7 +33,7 @@ public class TutorialCrafting
 			'X', Item.ingotGold, 'C', Block.stone, 'Z', new ItemStack(Item.dyePowder, 1, 15)
 		});
 		
-		//adds enchanting recipe
+		//adds enchanting recipe using a  1 Diamond Pick 1 flint and 1 tutorialBlock
 		ItemStack enchanted = new ItemStack(Item.pickaxeDiamond);
 		enchanted.addEnchantment(Enchantment.silkTouch, 1);
 		
